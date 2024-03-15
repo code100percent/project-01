@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .simple_flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .on_off_buttons_panel{
+            flex-direction: row;
+        }
+        .on_off_buttons_panel div{
+            height: 30vh;
+            width: 15vw;
+            padding: 10px;
+        }
+        .on_off_buttons_panel div button{
+            height: 100%;
+            width: 100%;
+        }
+        .on_off_buttons_panel div button img{
+            height: 100%;
+            width: 100%;
+        }
+
+        
+    </style>
+    <title>motor</title>
+</head>
+
+<body style="background-image: url('pexels-codioful-\(formerly-gradienta\)-7135037.jpg'); background-size: 100%;">
+    
+    <h1 style="text-align: center; color: white;">Controls</h1>
+    <div class="simple_flex on_off_buttons_panel">
+        <div id="motor_on_button">
+            <button onclick="make_border('motor_on_button')"><img src="on.jpg" alt=""></button>
+        </div>
+        <div id="motor_off_button">
+            <button onclick="make_border('motor_off_button')"><img src="off.jpg" alt=""></button>
+        </div>
+    </div>
+    
+    <h2 style="text-align: center; color: white;">status : developing </h2>
+
+    <script>
+
+        function make_border(button_div_id){
+
+            document.getElementById("motor_on_button").style.border = ""
+            document.getElementById("motor_off_button").style.border = ""
+            document.getElementById(button_div_id).style.border = "thick dotted green"
+        }
+
+    </script>
+</body>
+</html>
