@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Car Controller</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="p-6 bg-gray-100">
+  <div class="flex flex-col items-center gap-4">
+    <button class="border border-gray-400 rounded px-4 py-2 bg-white"
+    onclick="window.location.href='/commands/Forward'">Forward</button>
+    <div class="flex gap-4">
+      <button onclick="window.location.href='/commands/Left'" class="border border-gray-400 rounded px-4 py-2 bg-white">Left</button>
+      <button onclick="window.location.href='/commands/Right'" class="border border-gray-400 rounded px-4 py-2 bg-white">Right</button>
+    </div>
+    <button onclick="window.location.href='/commands/Backward'" class="border border-gray-400 rounded px-4 py-2 bg-white">Backward</button>
+  </div>
+
+  <div class="mt-6 flex justify-center">
+    <button onclick="window.location.href='/commands/Stop'" class="border border-gray-400 rounded px-4 py-2 bg-white">Stop</button>
+  </div>
+</body>
+</html>
